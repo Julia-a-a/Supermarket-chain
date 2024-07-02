@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОАЗИС</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>  
+        <div class="header-nav">
+            <nav class="header-nav_navbar">
+                <div class="container">
+                    <div class="header-nav_navbar__nav_row">
+                        <div class="header-nav_navbar__nav_logo">
+                            <a href="http://localhost/OAZIS — vite/vite-project/index.html">  <img src="./img/logo.svg"  alt=""></a>
+                        </div>
+                        <div class=" header-nav_navbar__nav_row nav_link-right">
+                            <ul class="header-nav_navbar__nav_row nav_link-btn">
+                                <li>
+                                    <a href="#modal" class="nav_link-btn_izbrannoe" id="modal-link">
+                                        <div class="like">
+                                            <img src="./img/Избранное.svg" class="like" alt="">
+                                        </div>   
+                                        <span>Избранное</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/OAZIS — vite/vite-project/avtorization.php" class="nav_link-btn_profile">
+                                        <div class="profile">
+                                            <img src="./img/Лк.svg" class="profile" alt="">
+                                        </div> 
+                                        <span>Профиль</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="busketbuy.html" class="nav_link-btn_korzina">
+                                        <div class="korzina">
+                                            <img src="./img/Корзина.svg" class="korzina" alt="">
+                                        </div> 
+                                        <span>Корзина</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main-menu">
+        <div class="main-menu_item">
+            <div class="container">
+                <div class="main-menu_item-nav">  <!--Блок образующий список из под меню-->
+                    <ul class="main-menu_item-nav menu-nav"> 
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/product.html">Продукты питания</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/alcohol.html">Алкоголь</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/clothes.html">Одежда</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/pet.html">Зоотовары</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/child.html">Детям</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/chemicals.html">Бытовая химия</a></li>
+                        <li class="menu-nav_btn"> <a href="http://localhost/OAZIS — vite/vite-project/household_goods.html">Хозтовары</a></li>
+                    </ul>
+                </div>
+                <div class="burger-menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="modal-p">В данный момент доступен просмотр каталога товаров, но ⇒ Вы можете сделать заказ через приложение</p> 
+                    <p class="modal-p_dop">С любовью, ваш OAZIS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="media_content">
+    <div class="container">
+        <div class="media_content_btn">
+            <ul class="media_content_btn">
+                <li>
+                    <a href="#season_tovar" class="media_content_btn hit">  <!--Содержит в себе кнопку в виде текста, накладываемого на фото-->
+                        <img src="./img/Rectangle_7.png" class="hit" alt="">
+                        <span class="hit_text">хиты сезона</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#new_tovar" class=" media_content_btnnew">
+                        <img src="./img/Rectangle_5.png" class="new" alt="">
+                        <span class="new_text">новинки</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sale" class=" media_content_btn sale">
+                        <img src="./img/Rectangle_6.png" class="sale" alt="">
+                        <span class="sale_text">скидки</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="info_tovar" id="info_tovar">
+    <div class="container">
+       <div class="info_tovar-content">
+        <div class="info_tovar-content_h2">
+            <h2 class="info_tovar-content_h2">Cпособы получения</h2>
+            <h2 class="info_tovar-content_h2_end">наших товаров</h2>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-p">Доставка осуществляется курьерами таких компаний как:</p> 
+                <p>⇒ Сбербанк</p>
+                <p>⇒ Самокат</p>
+                <p>⇒ Везём</p>
+                <p>Во времени время доставки составляет всего 30-40 минут!</p>
+                <p>Доставка взнимается процентом от суммы исходного заказа, никак в дальнейшем не накладываясь процентом к сумме заказа</p>
+                <p>Наши курьеры — профессионалы своего дела, которые доставят ваш заказ точно в указанное время, даже в самый оживлённый день!
+                    Мы бережно упакуем каждый ваш товар, чтобы он доехал к вам целым и невредимым, гарантируя сохранность вашей покупки.
+                   Следите за статусом вашей доставки в режиме реального времени через SMS-уведомления или специальное приложение, чтобы быть в курсе каждого этапа доставки.
+                    Для вашего удобства мы принимаем различные способы оплаты, чтобы вы могли выбрать наиболее удобный для себя, не отходя от своих предпочтений.
+                    Высокий уровень сервиса и забота о каждом клиенте — наш приоритет! Доверьте нам ваш заказ, и мы сделаем всё возможное, чтобы доставить вам радость и удовлетворение от покупки!</p>
+            </div>
+        </div>
+        <div id="myModalONE" class="modal"> 
+            <div class="modal-content">
+                <span class="close">&times;</span> <!--кнопка закрытия модального окна-->
+                <p class="modal-p">Самовывоз - идеальное решение и экономия времени</p> 
+                <p>⇒ Экономит время</p>
+                <p>⇒ Упрощает поиск товаров</p>
+                <p>⇒ Моментально забрать свою покупку и не ждать курьера</p>
+                <p>Можно забрать собранный заказ из удобного вам филиала</p>
+                <p>Удобство получения заказа = довольный клиент</p>
+                <p>Помимо этого, есть возможность лично проверить товар перед его приобретением, что точно не оставит пользователя в недоумении. Также при условии самовывоза, вы сможете несомненно совершить накомство с местом, где вы забираете свои покупки.</p>
+                <p>Высокий уровень сервиса и забота о каждом клиенте — наш приоритет! Доверьте нам ваш заказ, и мы сделаем всё возможное, чтобы доставить вам радость и удовлетворение от покупки!</p>
+            </div>
+        </div>
+        <div class="info_tovar-content_radio-btn">  <!--Блок для кнопки и ее подписи-->
+            <div class="info_tovar-content_radio-btn_one">
+            <input type="radio" id="dostavka" name="dostavka" value="dostavka" checked />
+            <label for="dostavka">Доставка</label>
+        </div>
+            <div class="info_tovar-content_radio-btn_two"><!--Блок для кнопки и ее подписи-->
+                <div class="radio-btn_two">
+                    <input type="radio" id="pickup" name="dostavka" value="pickup" checked />
+                    <label for="dostavka">Самовывоз</label>     
+                </div>
+            </div>
+        <div class="info_tovar-content_btn">
+            <a href="http://localhost/OAZIS — vite/vite-project/filial.html">
+                <span class="info_tovar-content_btn-filial">
+                Список магазинов
+                </span>
+            </a>
+        </div>
+       </div>
+    </div>
+    </div>
+</section>
+<section class="top_tovar"> 
+    <div class="container"> 
+        <div class="top_tovar-content">
+            <div class="top_tovar-content_h2">
+                <h2>Топ продаваемых товаров</h2>
+            </div>
+                <div class="top_tovar-content_p">
+                    <p>Организация “ОАЗИС” всегда рада видеть большой поток покупателей, ведь именно у здесь вы найдёте то, что вам нужно с  пометкой “качественно”</p>
+                    <p>С истечением времени, наш магазин провёл аналитику продаж  и выдвинул топ-4 интересных и нужных клиенту товаров.</p>
+                </div>
+                <div class="top_tovar-content_cards"> <!--Блок дляотображение строки карточек-->
+                    <div class="top_tovar-content_card"><!--Блок для обводки карточки-->
+                        <div class="product-card"> <!--Блок для содержимого карточки-->
+                            <div class="product_card-image_part"><!--Блок для медиа контента-->
+                                <div class="product_card-image_content"><!--Блок для медиа контента-->
+                                    <img class="product_card-image" src="./img/Rectangle_11.png" alt="">
+                                </div>
+                                <div class="product_card__top"> <!--Блок для шапки карточки-->
+                                    <a class="product_card__top_a"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content"> <!--Блок для другого типа контента-->
+                                <div class="product_card-dop_info"> <!--Блок для дополнительной информации-->
+                                    <div class="product_card-dop_rating"> <!--Блок для характеристик товара-->
+                                        <div class="rating_content"> <!--Блок для рейтинга-->
+                                            <div class="rating_icon"> <!--Блок для иконки-->
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number"> <!--Блок для обозначение цифр рейтинга-->
+                                            4.9
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div class="product_card-dop_params"> <!--Блок для обозначения цены в количествах-->
+                                <div class="params_info"> <!--Блок непосредственно цены-->
+                                    250, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title"> <!--Блок для текстовой части карточки-->
+                            <div class="product_card-title__content"> <!--Блок для контента-->
+                              <p class="title__content"> Филе грудки цыплёнка
+                                охлаждённое, 500г</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer"> <!--Блок для подвала карточки-->
+                            <div class="product__card-price"> <!--Блок для цены-->
+                                <div class="product__card-price_content"> <!--Блок  для контента-->
+                                    <div class="price_new"> <!--Блок для новой цены-->
+                                        <span class="price">250, 99₽</span>
+                                    </div>
+                                    <div class="price_old"> <!--Блок для старой цены-->
+                                        <div class="price_old-content"> <!--Блок для контента-->
+                                            <span class="price line-decoration">430,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy"> <!--Блок для кнопки корзины-->
+                                <div class="product__card-buy__content"> <!--Блок для контента-->
+                                    <a class="buy_btn btn-ens-action" data-rel="8599a7d9337120">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(2).png" alt="">
+                        </div>
+                        <div class="product_card__top">
+                            <a class="product_card__top_img"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.9
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    40, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                                <p class="title__content"> Вода Святой источник газированная, 1.5л</p>  
+                            </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">40, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                            <span class="price line-decoration">60,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                        <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(3).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__top_img-three first_like"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                        4.9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        310, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content">
+                                        <p class="title__content"> Сыровяленная колбаса Престиж, 300г</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">310, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration">480,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(4).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__img-four first_part"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                            4.8
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        90, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title">
+                                <div class="product_card-title__content_last">
+                                    <p class="title__content"> Буханка “Косичка”, 285г</p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                        <span class="price">90, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration">120,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="./img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="new_tovar" id="new_tovar">
+    <div class="container">
+        <div class="new_tovar-content">
+            <div class="new_tovar-content_h2">
+                <h2>Новинки ></h2>
+            </div>
+            <div class="new_tovar-content_cards">
+                <div class="top_tovar-content_cards">
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                    <img class="product_card-image" src="./img/Rectangle11(5).png" alt="">
+                                </div>
+                                <div class="product_card__top new-card">
+                                    <p class="product_card__top_p">Новинки</p>
+                                    <a class="product_card__top_a like_new"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content">
+                                <div class="product_card-dop_info">
+                                    <div class="product_card-dop_rating">
+                                        <div class="rating_content">
+                                            <div class="rating_icon">
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number">
+                                                    4.9
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_card-dop_params">
+                                        <div class="params_info">
+                                            550, 99₽/шт
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content">
+                                        <p class="title__content card_parrttwo"> Кофта оверсайз “Bunny”</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">550, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration new">430,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(6).png" alt="">
+                            </div>
+                                <div class="product_card__top new-card">
+                                    <p class="product_card__top_p p_new">Новинки</p>
+                                    <a class="product_card__top_img like_new"><img src="./img/like.svg"  alt=""></a>
+                                </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.9
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    980, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content dop_sett">
+                                <p class="title__content"> Кофта оверсайз “Silient Hil”</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">980, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration new">430,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(7).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p new_three">Новинки</p>
+                            <a class="product_card__top_img-three like_new"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.9
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    580, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                            <p class="title__content"> Рубашка декоративная “Сердце”</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">580, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration new">430,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(8).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p p_new_three">Новинки</p>
+                            <a class="product_card__img-four like_new"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                <div class="product_card-content">
+                    <div class="product_card-dop_info">
+                        <div class="product_card-dop_rating">
+                            <div class="rating_content">
+                                <div class="rating_icon">
+                                    <img src="./img/Star6.svg" alt="">
+                                </div>
+                                <div class="rating_number">
+                                    4.9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-dop_params">
+                            <div class="params_info">
+                                200, 99₽/шт
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card-title">
+                        <div class="product_card-title__content_last last">
+                            <p class="title__content"> Шорты спортивные <br>“New step”</p>  
+                        </div>
+                    </div>
+                    <div class="product_card-footer">
+                        <div class="product__card-price">
+                            <div class="product__card-price_content">
+                                <div class="price_new">
+                                    <span class="price">200, 99₽</span>
+                                </div>
+                                <div class="price_old">
+                                    <div class="price_old-content">
+                                        <span class="price line-decoration new">430,99₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card-buy">
+                            <div class="product__card-buy__content">
+                                <a class="buy_btn">
+                                    <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="top_tovar-content_cards card-link_two">
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(9).png" alt="">
+                            </div>
+                            <div class="product_card__top new-card">
+                                <p class="product_card__top_p">Новинки</p>
+                                <a class="product_card__top_a like_new"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                            4.71
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        340, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title">
+                                <div class="product_card-title__content">
+                                    <p class="title__content card_parrttwo dogcard"> Вязаный свитер для собак “DogHealth”</p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">340, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration new">430,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="/img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(10).png" alt="">
+                            </div>
+                            <div class="product_card__top new-card">
+                            <p class="product_card__top_p p_new">Новинки</p>
+                            <a class="product_card__top_img like_new"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                            4.8
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        260, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title">
+                                <div class="product_card-title__content dop_sett catcard">
+                                    <p class="title__content"> Толстовка весенняя для котов и кошек “Millyday” </p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">260, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration new">430,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="./img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(11).png" alt="">
+                            </div>
+                            <div class="product_card__top new-card">
+                                <p class="product_card__top_p new_three">Новинки</p>
+                                <a class="product_card__top_img-three like_new"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.87
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    400, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                                <p class="title__content"> Толстовка утеплённая для собак “smilePET”</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">400, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration new">430,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(12).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p p_new_three">Новинки</p>
+                            <a class="product_card__img-four like_new"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                </div>
+                <div class="product_card-content">
+                    <div class="product_card-dop_info">
+                        <div class="product_card-dop_rating">
+                            <div class="rating_content">
+                                <div class="rating_icon">
+                                    <img src="/img/Star6.svg" alt="">
+                                </div>
+                                <div class="rating_number">
+                                    4.8
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-dop_params">
+                            <div class="params_info">
+                                200, 99₽/шт
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card-title">
+                        <div class="product_card-title__content_last last">
+                            <p class="title__content"> Костюм “Медвежонок” для котов и кошек</p>  
+                        </div>
+                    </div>
+                    <div class="product_card-footer">
+                        <div class="product__card-price">
+                            <div class="product__card-price_content">
+                                <div class="price_new">
+                                    <span class="price">200, 99₽</span>
+                                </div>
+                                <div class="price_old">
+                                    <div class="price_old-content">
+                                        <span class="price line-decoration new">430,99₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card-buy">
+                            <div class="product__card-buy__content">
+                                <a class="buy_btn">
+                                    <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>         
+        </div>
+    </div>
+</section>
+<section class="sale" id="sale">
+    <div class="container">
+        <div class="sale-content">
+            <div class="sale_h2">
+                <h2>Скидки ></h2>
+            </div>
+            <p class="data_sale">Период скидки продлится с <i class="color_text">05.06.2024</i> до <i class="color_text">05.08.2024</i></p>
+            <div class="new_tovar-content_cards">
+                <div class="top_tovar-content_cards">
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                    <img class="product_card-image" src="./img/Rectangle11(13).png" alt="">
+                                </div>
+                                <div class="product_card__top new-card">
+                                    <p class="product_card__top_p">-20%</p>
+                                    <a class="product_card__top_a like_sale"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content">
+                                <div class="product_card-dop_info">
+                                    <div class="product_card-dop_rating">
+                                        <div class="rating_content">
+                                            <div class="rating_icon">
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number">
+                                                4.6
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_card-dop_params">
+                                        <div class="params_info">
+                                            60, 99₽/шт
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content">
+                                        <p class="title__content card_parrttwo sale-card">Whiskas для котят со вкусом рагу</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">60, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration sale_old-price">80,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                    <img class="product_card-image" src="./img/Rectangle11(14).png" alt="">
+                                </div>
+                                <div class="product_card__top new-card">
+                                    <p class="product_card__top_p p_new">-18%</p>
+                                    <a class="product_card__top_img like_sale"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content">
+                                <div class="product_card-dop_info">
+                                    <div class="product_card-dop_rating">
+                                        <div class="rating_content">
+                                            <div class="rating_icon">
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number">
+                                                4.6
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_card-dop_params">
+                                        <div class="params_info">
+                                            130, 99₽/шт
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content dop_sett">
+                                        <p class="title__content">Шампиньоны, 400г</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">130, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration sale_old-price">160,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(15).png" alt="">
+                            </div>
+                            <div class="product_card__top new-card">
+                                <p class="product_card__top_p new_three">-34%</p>
+                                <a class="product_card__top_img-three like_sale"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg"  alt="" >
+                                        </div>
+                                        <div class="rating_number">
+                                            4.9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        250, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title sale_title">
+                                <div class="product_card-title__content">
+                                    <p class="title__content"> Гантели для йоги, 10kg</p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">250, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration sale_old-price">380,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="./img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(16).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p p_new_three">-25%</p>
+                            <a class="product_card__img-four like_sale"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg"  alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.72
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    90, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title sale_title">
+                            <div class="product_card-title__content_last last">
+                                <p class="title__content"> Суккулент декоративный</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">90, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration">120,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="top_tovar-content_cards card-link_two">
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(17).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p">-46%</p>
+                            <a class="product_card__top_a like_sale"><img src="./img/like.svg" alt="" ></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    300, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title sale_title">
+                            <div class="product_card-title__content">
+                                <p class="title__content card_parrttwo dogcard">Спортивный женский костюм</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">300, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration sale_old-price">560,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(18).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                        <p class="product_card__top_p p_new">-58%</p>
+                        <a class="product_card__top_img like_sale"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.89
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    200, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title sale_title">
+                            <div class="product_card-title__content dop_sett catcard">
+                                <p class="title__content"> Мед “У палыча”, 500г</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">200, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration sale_old-price">480,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(19).png" alt="">
+                        </div>
+                        <div class="product_card__top new-card">
+                            <p class="product_card__top_p new_three">-52%</p>
+                            <a class="product_card__top_img-three like_sale"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                </div>
+                <div class="product_card-content">
+                    <div class="product_card-dop_info">
+                        <div class="product_card-dop_rating">
+                            <div class="rating_content">
+                                <div class="rating_icon">
+                                    <img src="./img/Star6.svg" alt="">
+                                </div>
+                                <div class="rating_number">
+                                    4.9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-dop_params">
+                            <div class="params_info">
+                                310, 99₽/шт
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card-title sale_title">
+                        <div class="product_card-title__content">
+                            <p class="title__content">Кроссовки в стиле “Дрейн”</p>  
+                        </div>
+                    </div>
+                    <div class="product_card-footer">
+                        <div class="product__card-price">
+                            <div class="product__card-price_content">
+                                <div class="price_new">
+                                    <span class="price">310, 99₽</span>
+                                </div>
+                                <div class="price_old">
+                                    <div class="price_old-content">
+                                        <span class="price line-decoration sale_old-price">650,99₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card-buy">
+                            <div class="product__card-buy__content">
+                                <a class="buy_btn">
+                                    <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_tovar-content_card">
+            <div class="product-card">
+                <div class="product_card-image_part">
+                    <div class="product_card-image_content">
+                        <img class="product_card-image" src="./img/Rectangle11(20).png" alt="">
+                    </div>
+                    <div class="product_card__top new-card">
+                        <p class="product_card__top_p p_new_three">-25%</p>
+                        <a class="product_card__img-four like_sale"><img src="./img/like.svg" alt=""></a>
+                    </div>
+            </div>
+            <div class="product_card-content">
+                <div class="product_card-dop_info">
+                    <div class="product_card-dop_rating">
+                        <div class="rating_content">
+                            <div class="rating_icon">
+                                <img src="/img/Star6.svg" alt="">
+                            </div>
+                            <div class="rating_number">
+                                4.69
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card-dop_params">
+                        <div class="params_info">
+                            90, 99₽/шт
+                        </div>
+                    </div>
+                </div>
+                <div class="product_card-title">
+                    <div class="product_card-title__content_last last">
+                        <p class="title__content">Лакомство для взрослых собак</p>  
+                    </div>
+                </div>
+                <div class="product_card-footer">
+                    <div class="product__card-price">
+                        <div class="product__card-price_content">
+                            <div class="price_new">
+                                <span class="price">90, 99₽</span>
+                            </div>
+                            <div class="price_old">
+                                <div class="price_old-content">
+                                    <span class="price line-decoration sale_old-price">120,99₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__card-buy">
+                        <div class="product__card-buy__content">
+                            <a class="buy_btn">
+                                <span>
+                                    <img src="./img/Group_138.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stocks">
+    <div class="container">
+        <div class="stocks-content">
+            <div class="stocks-content_h2">
+                <h2>Акции</h2>
+            </div>
+            <div class="stocks-content_cards">
+                <img src="./img/Group163.png" alt="">
+                <img src="./img/Group187.png" alt="">
+                <img src="./img/Group189.png" alt="">
+                <img src="./img/Group190.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="season_tovar" id="season_tovar">
+    <div class="container">
+        <div class="season_tovar-content">
+            <div class="season_tovar-content_h2">
+                <h2>Сезонные товары</h2>
+            </div>
+            <div class="season_tovar-content_cards">
+                <div class="top_tovar-content_cards">
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                    <img class="product_card-image" src="./img/Rectangle11(21).png" alt="">
+                                </div>
+                                <div class="product_card__top">
+                                    <a class="product_card__top_a"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content">
+                                <div class="product_card-dop_info">
+                                    <div class="product_card-dop_rating">
+                                        <div class="rating_content">
+                                            <div class="rating_icon">
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number">
+                                            4.7
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    280, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                              <p class="title__content season_card"> Клубника, 300г</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">290, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration">330,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg"  alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(22).png" alt="">
+                        </div>
+                        <div class="product_card__top">
+                            <a class="product_card__top_img"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    2400, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                                <p class="title__content  season_card"> Набор для шашлыка</p>  
+                            </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">6460, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                            <span class="price line-decoration">60,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                        <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(23).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__top_img-three first_like"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                        4.8
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        80, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content">
+                                        <p class="title__content  season_card">Арбуз вологодский, 2 кг</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">80, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration">100,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(24).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__img-four first_part"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                            4.9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        2200, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title">
+                                <div class="product_card-title__content_last">
+                                    <p class="title__content">Летняя палатка</p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                        <span class="price">2200, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration">5000,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="./img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="season_tovar-content_cards">
+                <div class="top_tovar-content_cards season-card">
+                    <div class="top_tovar-content_card">
+                        <div class="product-card">
+                            <div class="product_card-image_part">
+                                <div class="product_card-image_content">
+                                    <img class="product_card-image" src="./img/Rectangle11(25).png" alt="">
+                                </div>
+                                <div class="product_card__top">
+                                    <a class="product_card__top_a"><img src="./img/like.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="product_card-content">
+                                <div class="product_card-dop_info">
+                                    <div class="product_card-dop_rating">
+                                        <div class="rating_content">
+                                            <div class="rating_icon">
+                                                <img src="./img/Star6.svg" alt="">
+                                            </div>
+                                            <div class="rating_number">
+                                            4.8
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    200, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                              <p class="title__content  season_card"> Крем-молочко от загара</p>  
+                            </div>
+                        </div>
+                        <div class="product_card-footer">
+                            <div class="product__card-price">
+                                <div class="product__card-price_content">
+                                    <div class="price_new">
+                                        <span class="price">200, 99₽</span>
+                                    </div>
+                                    <div class="price_old">
+                                        <div class="price_old-content">
+                                            <span class="price line-decoration">430,99₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__card-buy">
+                                <div class="product__card-buy__content">
+                                    <a class="buy_btn">
+                                        <span>
+                                            <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_tovar-content_card">
+                <div class="product-card">
+                    <div class="product_card-image_part">
+                        <div class="product_card-image_content">
+                            <img class="product_card-image" src="./img/Rectangle11(26).png" alt="">
+                        </div>
+                        <div class="product_card__top">
+                            <a class="product_card__top_img"><img src="./img/like.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product_card-content">
+                        <div class="product_card-dop_info">
+                            <div class="product_card-dop_rating">
+                                <div class="rating_content">
+                                    <div class="rating_icon">
+                                        <img src="./img/Star6.svg" alt="">
+                                    </div>
+                                    <div class="rating_number">
+                                        4.9
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-dop_params">
+                                <div class="params_info">
+                                    1000, 99₽/шт
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card-title">
+                            <div class="product_card-title__content">
+                                <p class="title__content   season_card"> Пляжный зонтик</p>  
+                            </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                            <span class="price">1000, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                            <span class="price line-decoration">2500,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                        <span>
+                                        <img src="./img/Group_138.svg" alt="">
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(27).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__top_img-three first_like"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                        4.9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        310, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="product_card-title">
+                                    <div class="product_card-title__content">
+                                        <p class="title__content"> Вишня “Спелая радость”,
+                                            500г</p>  
+                                    </div>
+                                </div>
+                                <div class="product_card-footer">
+                                    <div class="product__card-price">
+                                        <div class="product__card-price_content">
+                                            <div class="price_new">
+                                                <span class="price">310, 99₽</span>
+                                            </div>
+                                            <div class="price_old">
+                                                <div class="price_old-content">
+                                                    <span class="price line-decoration">400,99₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card-buy">
+                                        <div class="product__card-buy__content">
+                                            <a class="buy_btn">
+                                                <span>
+                                                    <img src="./img/Group_138.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_tovar-content_card">
+                    <div class="product-card">
+                        <div class="product_card-image_part">
+                            <div class="product_card-image_content">
+                                <img class="product_card-image" src="./img/Rectangle11(28).png" alt="">
+                            </div>
+                            <div class="product_card__top">
+                                <a class="product_card__img-four first_part"><img src="./img/like.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_card-content">
+                            <div class="product_card-dop_info">
+                                <div class="product_card-dop_rating">
+                                    <div class="rating_content">
+                                        <div class="rating_icon">
+                                            <img src="./img/Star6.svg" alt="">
+                                        </div>
+                                        <div class="rating_number">
+                                            4.78
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card-dop_params">
+                                    <div class="params_info">
+                                        450, 99₽/шт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card-title">
+                                <div class="product_card-title__content_last">
+                                    <p class="title__content  season_card_dop"> Плавательный круг
+                                        “Фламинго”</p>  
+                                </div>
+                            </div>
+                            <div class="product_card-footer">
+                                <div class="product__card-price">
+                                    <div class="product__card-price_content">
+                                        <div class="price_new">
+                                        <span class="price">450, 99₽</span>
+                                        </div>
+                                        <div class="price_old">
+                                            <div class="price_old-content">
+                                                <span class="price line-decoration">620,99₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__card-buy">
+                                    <div class="product__card-buy__content">
+                                        <a class="buy_btn">
+                                            <span>
+                                                <img src="./img/Group_138.svg" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brend" id="brend">
+    <div class="container">
+        <div class="brend-content">
+            <div class="brend-content_h2">
+                <h2>Бренды</h2>
+            </div>
+            <div class="brend-content_p">
+               <p> "ОАЗИС" - организация, которая укрепляет свою позицию благодаря плодотворному сотрудничеству с множеством известных брендов. Мы стремимся к тому, чтобы наша продукция соответствовала высоким стандартам качества и полностью удовлетворяла запросы и потребности клиентов. Наше партнерство с брендами основано на взаимном уважении, внимании к деталям и стремлении достичь совместных целей. Мы гордимся возможностью предлагать уникальные продукты и услуги, которые отражают наше стремление помочь клиенту.</p>
+            </div>
+            <div class="brend-content-slaider">
+                <div class="slider-container">
+                    <div class="slider">
+                        <img class="slider_img" src="./img/Rectangle12.png" alt="">
+                        <img class="slider_img" src="./img/Rectangle13.png" alt="">
+                        <img class="slider_img" src="./img/Rectangle14.png" alt="">
+                        <img class="slider_img" src="./img/Rectangle15.png" alt="">
+                        <img class="slider_img" src="./img/Rectangle12(2).png"  alt=""  >
+                        <img class="slider_img" src="./img/Rectangle13(2).png" alt=""   >
+                        <img class="slider_img" src="./img/Rectangle14(2).png" alt=""   >
+                        <img class="slider_img" src="./img/Rectangle15(2).png" alt=""   >
+                        <img class="slider_img" src="./img/Rectangle12(1).png" alt=""   >
+                        <img class="slider_img" src="./img/Rectangle13(1).png"  alt=""  >
+                        <img class="slider_img" src="./img/Rectangle14(1).png" alt=""   >
+                        <img class="slider_img" src="./img/Rectangle15(1).png" alt=""   >
+                    </div>
+                </div>
+                <div class="btn-slider">
+                    <a class="prev" onclick="showPreviousSlide()"><img src="./img/Group19.svg" alt=""></a>
+                    <a class="next" onclick="showNextSlide()"><img src="./img/Group170.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+   <div class="container"> 
+    <div class="footer-content"> <!--Блок для контента-->
+        <div class="footer-content_h2"> <!--Блок для заголовка-->
+            <h2>Оазис</h2>
+        </div>
+        <div class="footer-content_p"> <!--Блок для подзаголовка-->
+            <p>сеть супермаркетов</p>
+        </div>
+        <div class="footer-content_info"> <!--Блок для контента подвала-->
+            <div class="footer-content_info part_one"> <!--Блок для первой части контента-->
+                <div class="part_one-h3"> <!--Блок для подзаголовка-->
+                    Обратная связь
+                </div>
+                <div class="part_one-p"><!--Блок для контента-->
+                    <p class="part_p">+7(991)-232-45-33</p>
+                    <p class="part_p">oasismarket@gmail.ru</p>
+                </div>
+                <div class="part_one-h3"> <!--Блок для подзаголовка-->
+                    Служба поддержки
+                </div>
+                <div class="part_one-p"> <!--Блок для контента-->
+                    +7(999)-331-66-83
+                </div>
+            </div>
+            <div class="footer-content_info part_two"><!--Блок для второй части контента-->
+                <div class="part_one-h3">
+                    Оазис
+                </div>
+                <div class="part_one-p"><!--Блок для подзаголовка-->
+                    <a href="filial.html"><p class="part_p">Филиалы</p></a>
+                    <a href="#brend"><p class="part_p">Бренды</p></a>
+                    <a href="#info_tovar"><p class="part_p">Способы получения товара</p></a>
+                </div>
+            </div>
+            <div class="footer-content_info part_three"> <!--Блок для третьей части контента-->
+                <div class="part_three-h3"><!--Блок для подзаголовка-->
+                    <h3>Мы в социальный сетях</h3>
+                </div>
+                <div class="part_three-img"> <!--Блок для медиа контента-->
+                    <img src="./img/Rectangle21.png" class="social-icon" alt="">
+                    <img src="./img/Rectangle22.png" class="social-icon" alt="">
+                    <img src="./img/Rectangle23.png" class="social-icon" alt="">
+                    <img src="./img/Rectangle24.png" class="social-icon" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+</footer>
+<script src="./javascript/java.js"></script> <!--Подключение JS-->
+</body>
+</html>
