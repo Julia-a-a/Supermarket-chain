@@ -11,8 +11,8 @@
 1. PHP
 2. MYSQL
 3. HTML
-4. "CSS-язык"
-5. "SCSS"
+4. CSS
+5. SCSS
 
 ## Программы и средства
 1. VS code
